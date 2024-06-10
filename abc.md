@@ -150,6 +150,8 @@ Virtual environments manage dependencies and keep projects isolated.
    - **Windows:** `myenv\Scripts\activate`
    - **macOS/Linux:** `source myenv/bin/activate`
 
+![Screenshot 2024-06-09 233009](https://github.com/anuja19103/Articles/assets/125860363/18b7e2c6-ea41-4fad-b5ee-2eeb6fa60c62)
+
 #### Verifying Environment
 
 1. **Check Python Version:**
@@ -160,6 +162,11 @@ Virtual environments manage dependencies and keep projects isolated.
    ```bash
    pip list
    ```
+
+   ![Screenshot 2024-06-09 233025](https://github.com/anuja19103/Articles/assets/125860363/abc1a403-1072-486c-b84d-9e756f984dd0)
+
+
+   
 
 ### Example Workflow
 
@@ -178,15 +185,20 @@ Virtual environments manage dependencies and keep projects isolated.
    ```
 4. **Start a Django Project:**
    ```bash
-   django-admin startproject myproject
+   django-admin startproject my_project
    ```
 5. **Run the Server:**
    ```bash
-   cd myproject
+   cd my_project
    python manage.py runserver
    ```
 
 This setup provides an isolated, functional environment to start building your web application.
+
+![starting server](https://github.com/anuja19103/Articles/assets/125860363/aad005c7-bb60-42a7-8e22-1b4d6891fd31)
+
+
+
 ## VI. Creating Your First Web Application
 
 ### Step-by-Step Guide
