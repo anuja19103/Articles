@@ -316,9 +316,12 @@ Creating your first web application using Django involves several steps:
    from django.shortcuts import render
 
    def home(request):
-       context = {'message': 'Hello, World!'}
+       context = {'message': 'hello This is my first Django Application'}
        return render(request, 'index.html', context)
    ```
+
+   ![Output](https://github.com/anuja19103/Articles/assets/125860363/c7cb0cac-2f40-4e42-8bf7-f749761fdc6f)
+
 
 By following these steps, you create a basic Django web application with a simple homepage. Expand this structure with more views, templates, and routes to build more complex applications.
 ## VII. Understanding HTTP and URLs
@@ -434,7 +437,10 @@ HTTP status codes indicate request results:
    python manage.py runserver
    ```
 
-5. **Access the view in a browser**: Navigate to `http://127.0.0.1:8000/hello/` to see "Hello, World!".
+5. **Access the view in a browser**: Navigate to `http://127.0.0.1:8000` to see the output.
+
+![Output - portno](https://github.com/anuja19103/Articles/assets/125860363/e8ad7ec5-d715-4129-8767-23ace5ec19a8)
+
 ## IX. Templating and Rendering
 
 ### Templating Engines
