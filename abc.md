@@ -16,7 +16,6 @@ This includes the following:
 - Deploying and hosting your web application
 - References for additional topics
 # What is Web Development?
-## Definition and Role
 Web development is the process of creating and maintaining websites and web applications. It involves independent works on -
  **Frontend Development:** User interface creation with HTML, CSS, and JavaScript.
  **Backend Development:** Management of the server, application, and database.
@@ -63,9 +62,9 @@ Python is well-suited for web development because of its:
 - **Community:** Large community, support, and resources are widely available. 
 - **Versatility:** Used in Web Development, Data Science, etc.
 ## Some Popular Python Web Frameworks
-**Django** — Full-stack framework. This is an ideal framework with an inbuilt admin interface, ORM, and robust security features for very complex data-driven applications. 
-**Flask** — A lightweight microframework. This framework lays great emphasis on simplicity and flexibility, hence very well suited for small to medium applications and even prototyping. 
-**Pyramid** — General-purpose framework. Highly flexible and scalable. It has a lot of configuration options and hence is suitable for any size of projects.
+- **Django** — Full-stack framework. This is an ideal framework with an inbuilt admin interface, ORM, and robust security features for very complex data-driven applications. 
+- **Flask** — A lightweight microframework. This framework lays great emphasis on simplicity and flexibility, hence very well suited for small to medium applications and even prototyping. 
+- **Pyramid** — General-purpose framework. Highly flexible and scalable. It has a lot of configuration options and hence is suitable for any size of projects.
 # Setting Up Your Development Environment
 ## Installing Python and a Web Framework
 You start web development with Python by installing the Python programming language, choosing a web framework that you prefer, and setting up a virtual environment.
@@ -80,14 +79,13 @@ You start web development with Python by installing the Python programming langu
 **Open Terminal/Command Line:**
  `pip install django`
  ![install django](https://github.com/anuja19103/Articles/assets/125860363/394288d1-6f34-4e95-870f-6dbf1cb21dc6)
+ 
+ <div class="div-blue"> <span class="alert-header">Note:</span> <span class="alert-body"> This step is not necessary if Django is already installed.</span> </div>
+ 
 You can understand it better from [here](https://docs.djangoproject.com/en/5.0/intro/install/)
-## Virtual Environments
-Virtual environments are a way to manage dependencies and to keep things neat and connected to our projects.
 ## Creating and Activating a Virtual Environment
-**Create Environment:**
 **macOS/Linux:** `source myenv/bin/activate`
 ![settingup virtual enviorment](https://github.com/anuja19103/Articles/assets/125860363/75c8c7b8-ec6a-42d7-9383-83aae759c2a9)
-## Environment check
 **Python Version Check:**
    ```bash
    python --version
@@ -97,7 +95,6 @@ Virtual environments are a way to manage dependencies and to keep things neat an
    pip list
    ```
 ![verifing enviorment](https://github.com/anuja19103/Articles/assets/125860363/f4d961f3-db2f-4a8a-9464-e45126be0073)
-## Example workflow
 1. **Change into Project Directory:**
    ```bash
    cd path/to/your/project
@@ -120,7 +117,7 @@ Virtual environments are a way to manage dependencies and to keep things neat an
    cd my_project
    python manage.py runserver
    ```
-This setup provides you with an isolated functional environment to get started building your web application.
+    <div class="div-blue"> <span class="alert-header">Note:</span> <span class="alert-body">This setup provides you with an isolated functional environment to get started building your web application.</span> </div>
 ![starting server](https://github.com/anuja19103/Articles/assets/125860363/c7683cba-08cf-41a7-9fda-8ce594841b10)
 ## Creating Your First Web Application
 Creating your very first web application with Django requires several steps:
@@ -142,13 +139,14 @@ myproject/
        ├── urls.py
        └── wsgi.py
    ```
-![structure](https://github.com/anuja19103/Articles/assets/125860363/c3d70db2-b462-4bd1-88be-821be2eb499f)
 2. Run the Server
  Run the development server:
 ```bash
    python manage.py runserver
 ```
 3. Follow `http://127.0.0.1:8000/` in your web browser and you should get the Django default welcome page.
+<div class="div-blue"> <span class="alert-header">Note:</span> <span class="alert-body">Starting a new Django project sets up the initial directory structure and configurations needed to begin development.
+</span> </div>
 ## 3. Create an App
 1. The following will create a new Django app called myapp.
    ```bash
@@ -166,6 +164,9 @@ myproject/
    ├── tests.py
    └── views.py 
 ```
+
+<div class="div-blue"> <span class="alert-header">Note:</span> <span class="alert-body">Creating a new Django app modularizes your project, making it more manageable and scalable.</span> </div>
+
 ## Basic Structure
 ## I.Routes
 1. Inside `myproject/urls.py`, add the routes for your project.
@@ -228,17 +229,12 @@ myproject/
        context = {'message': 'hello This is my first Django Application'}
        return render(request, 'index.html', context)
 ```
-
-
 [click here](https://docs.djangoproject.com/en/5.0/intro/tutorial03/) to learn more about  Templates, Views and Routes in Django.
 ![Output](https://github.com/anuja19103/Articles/assets/125860363/c0b6e837-d42e-4665-86f1-f6f985426d0c)
-
-
 The steps above create a very basic Django web application with just one basic homepage view. Make this structure more sophisticated by adding more views, templates, and routes to get bigger applications.
 # Understanding HTTP and URLs
 ## HTTP Protocol
 HTTP stands for HyperText Transfer Protocol. It is the basis of communication on the web that allows for the transfer of data between clients, typically browsers, and servers, typically websites.
-
 Some of its main components are:
 
 - **Request:** This is sent by the client in order to request a resource from the server.
@@ -265,29 +261,6 @@ HTTP methods define an intent to do action on a resource:
 - **DELETE :** to remove data.
 - **PATCH :**  to modify data.
 - **HEAD :** to retrieve header only.
-## HTTP Request/Response Cycle
-
-**1. Client sends request:** Lines of the request, headers and optionally a body.
-**2. Server processes request:** Steps like the query of a database.
-**3. Server sends response:** Line of the status, headers and optionally a body.
-**4. Client renders response:** The content is displayed to the user.
-Understanding of HTTP and URLs by a web developer enables one to manage web resources and facilitate smooth operation during client-server communications.
-# Request and Response Handling
-## HTTP Requests and Methods
-These are client manipulations on a server. Major methods include:
-- **GET**: Fetch data.
-- **POST**: Send data.
-- **PUT**: Modify data.
-- **DELETE**: Remove data.
-## HTTP Status Codes
-These are responses to a request:
-- **200 OK**: Success.
-- **201 Created**: New resource created.
-- **204 No Content**: Successful request with no content.
-- **400 Bad Request**: Request that does not meet the validation criterion.
-- **401 Unauthorized**: Authentication is required.
-- **404 Not Found**: Resource is unavailable or disguised at that URI.
-- **500 Internal Server Error**: Server error.
 ## Handling in Python (Django Example)
 1. Create a Django project and app:
 
@@ -359,9 +332,6 @@ In Django, models are used to represent database tables, where every attribute c
       name = models.CharField(max_length=100)
       age = models.IntegerField()
 ```
-## Key Features of ORM
-ORM gives a number of advantages including but not limited to: abstraction, portability, security against SQL injection, flexibility in querying and code organization and many other python and web developments projects.
-It implies that with ORM, they efficiently handle databases and focus on developing great user experience.
 # Deployment and Hosting
 ## The Process of Deployment
 Basically, deploying a web application involves some critical steps for the smooth and effective running of your application within a production environment. It starts by preparing your code through testing, optimization, then finally packaging your application. You then need to decide on a hosting service that best suits your requirements.  Finally, set up a server for running your application.
@@ -375,14 +345,9 @@ Choosing the correct form of hosting service for your web application is an admi
 - **Security**
 - **Cost**
 # Resources
-
 - **[Django Official Documentation](https://docs.djangoproject.com/)**: The official Django documentation is the best place to start. It provides comprehensive guides, tutorials, and references for all Django functionalities.
 - **[Simple is Better Than Complex](https://simpleisbetterthancomplex.com/)**: A blog with tutorials and articles on Django and Python web development.
 - **[Django Stars Blog](https://djangostars.com/blog/)**: Articles and case studies related to Django development and best practices.
 - **"Django for Beginners" by William S. Vincent**: This book is perfect for those who are new to Django and web development.
-- **"Django Unleashed" by Andrew Pinkham**: A more in-depth book that covers advanced topics and best practices.
-- **"Two Scoops of Django" by Audrey Roy Greenfeld and Daniel Roy Greenfeld**: This book offers best practices and tips from Django experts.
-
 # Conclusion
-
 This tutorial was an introduction to Web Development with Python, including the frontend and backend of development, setting up a development environment, creating Web applications, understanding of HTTP, templating, working with Databases, and deployment of applications.
