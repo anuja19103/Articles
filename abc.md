@@ -1,7 +1,7 @@
 # Introduction to Web Development Using Python 
 # Introduction 
- Importance of Web Development The backbone of our online experience is based on web creation Web sites, web applications help businesses run smoothly, ease education processes, facilitate communication and enhance entertainment. On these grounds, we use them to share information, carry out electronic transactions and other related tasks; thus, they should be part of every organization’s endeavors. In addition, when people are seeking friends or life partners, they build new relationships through the social services they subscribe into. For these reasons, more of us will need good professionals who can make relevant pages with different engines or networks despite a growing addiction to information technology that human beings all over the world seem to experience.
-# Overview of the Tutorial
+ Importance of Web Development The backbone of our online experience is based on web creation Web sites, web applications help businesses run smoothly, ease education processes, facilitate communication and enhance entertainment. On these grounds, we use them to share information, carry out electronic transactions and other related tasks; thus, they should be part of every organization’s endeavors. In addition, when people are seeking friends or life partners, they build new relationships through the social services they subscribe into.
+ # Overview of the Tutorial
 The tutorial will introduce the most basic concepts of developing tools and technologies for the Web using Python. 
 This includes the following:
 - Base concepts of web development.
@@ -23,7 +23,6 @@ Web development is the process of creating and maintaining websites and web appl
  **Full-Stack Development:** Both frontend and backend development tasks are handled.
 The functionality, usability, and efficiency of websites are ensured through web development, which has become quite important for the visibility and functioning of any business.
 # Client-Server Architecture
-Web development adopts a client server architecture.
 ## Client
 Its the web browser-like Chrome, Firefox-that:
 - **Renders Content:** Shows HTML, CSS, and JavaScript.
@@ -54,7 +53,7 @@ Backend development concerns the server side of a web application. It deals with
 - **Roles and Responsibilities:** Handling data storage/retrieval, user authentication, business logic, and server configuration.
 ## Full-Stack Development
 Full-stack development involves the combination of frontend and backend development; a developer has the skills to handle the architecture of a web application at all levels. Thus, full-stack developers can handle everything from designing user interfaces to constructing server-side logic and databases.
-![Add a subheading](https://github.com/anuja19103/Articles/assets/125860363/53999c56-c1fd-4304-b753-37ea0e1053d8)
+![1](https://github.com/anuja19103/Articles/assets/125860363/2e15dbae-8a8d-4474-b205-767fade2e1e1)
 # Introduction of Python for Web Development
 ## Reasons to Use Python
 Python is well-suited for web development because of its:
@@ -80,13 +79,14 @@ You start web development with Python by installing the Python programming langu
 ## Step 2: Installing Django
 **Open Terminal/Command Line:**
  `pip install django`
-![The Command to install django](https://github.com/anuja19103/Articles/assets/125860363/7dabe068-5567-4f4f-8934-0e9068f5cd33)
+ ![install django](https://github.com/anuja19103/Articles/assets/125860363/394288d1-6f34-4e95-870f-6dbf1cb21dc6)
+You can understand it better from [here](https://docs.djangoproject.com/en/5.0/intro/install/)
 ## Virtual Environments
 Virtual environments are a way to manage dependencies and to keep things neat and connected to our projects.
 ## Creating and Activating a Virtual Environment
 **Create Environment:**
 **macOS/Linux:** `source myenv/bin/activate`
-![Screenshot 2024-06-09 233009](https://github.com/anuja19103/Articles/assets/125860363/18b7e2c6-ea41-4fad-b5ee-2eeb6fa60c62)
+![settingup virtual enviorment](https://github.com/anuja19103/Articles/assets/125860363/75c8c7b8-ec6a-42d7-9383-83aae759c2a9)
 ## Environment check
 **Python Version Check:**
    ```bash
@@ -96,7 +96,7 @@ Virtual environments are a way to manage dependencies and to keep things neat an
    ```bash
    pip list
    ```
-   ![Screenshot 2024-06-09 233025](https://github.com/anuja19103/Articles/assets/125860363/abc1a403-1072-486c-b84d-9e756f984dd0)
+![verifing enviorment](https://github.com/anuja19103/Articles/assets/125860363/f4d961f3-db2f-4a8a-9464-e45126be0073)
 ## Example workflow
 1. **Change into Project Directory:**
    ```bash
@@ -121,9 +121,10 @@ Virtual environments are a way to manage dependencies and to keep things neat an
    python manage.py runserver
    ```
 This setup provides you with an isolated functional environment to get started building your web application.
-![Starting Server](https://github.com/anuja19103/Articles/assets/125860363/aad005c7-bb60-42a7-8e22-1b4d6891fd31)
+![starting server](https://github.com/anuja19103/Articles/assets/125860363/c7683cba-08cf-41a7-9fda-8ce594841b10)
 ## Creating Your First Web Application
 Creating your very first web application with Django requires several steps:
+refer to the documentation [click here](https://docs.djangoproject.com/en/5.0/intro/tutorial03/)
 1. Start a New Project
 Open your terminal and run:
 ```bash
@@ -140,14 +141,15 @@ myproject/
        ├── settings.py
        ├── urls.py
        └── wsgi.py
-   ``` 
+   ```
+![structure](https://github.com/anuja19103/Articles/assets/125860363/c3d70db2-b462-4bd1-88be-821be2eb499f)
 2. Run the Server
  Run the development server:
 ```bash
    python manage.py runserver
 ```
 3. Follow `http://127.0.0.1:8000/` in your web browser and you should get the Django default welcome page.
-#### 3. Create an App
+## 3. Create an App
 1. The following will create a new Django app called myapp.
    ```bash
    python manage.py startapp myapp
@@ -226,12 +228,16 @@ myproject/
        context = {'message': 'hello This is my first Django Application'}
        return render(request, 'index.html', context)
 ```
-   ![Output](https://github.com/anuja19103/Articles/assets/125860363/c7cb0cac-2f40-4e42-8bf7-f749761fdc6f)
+
+
+[click here](https://docs.djangoproject.com/en/5.0/intro/tutorial03/) to learn more about  Templates, Views and Routes in Django.
+![Output](https://github.com/anuja19103/Articles/assets/125860363/c0b6e837-d42e-4665-86f1-f6f985426d0c)
+
 
 The steps above create a very basic Django web application with just one basic homepage view. Make this structure more sophisticated by adding more views, templates, and routes to get bigger applications.
 # Understanding HTTP and URLs
 ## HTTP Protocol
-HTTP stands for HyperText Transfer Protocol. It is the basis of communication on the web that allows for the transfer of data between clients, typically browsers, and servers, typically websites. This is a request–response protocol; the client requests resources, and the server responds to the request.
+HTTP stands for HyperText Transfer Protocol. It is the basis of communication on the web that allows for the transfer of data between clients, typically browsers, and servers, typically websites.
 
 Some of its main components are:
 
@@ -251,7 +257,7 @@ A URL is an address by which web resources are accessed. It consists of a number
 5. **Query:** Optional: Parameters of the resource, such as `?id=123`.
 6. **Fragment:** Optional, which part of the resource, like `#section2`.
 For instance, an URL could look as follows: `https://www.example.com:8080/path/to/resource?query=value#fragment`
-### HTTP Methods and Status Codes
+## HTTP Methods and Status Codes
 HTTP methods define an intent to do action on a resource:
 - **GET :** to retrieve data from an origin server.
 - **POST :** to submit data.
@@ -259,14 +265,7 @@ HTTP methods define an intent to do action on a resource:
 - **DELETE :** to remove data.
 - **PATCH :**  to modify data.
 - **HEAD :** to retrieve header only.
-
-**HTTP status codes are to represent the final result of the request:**
-- **1xx Informational:** Request received, continuing process (e.g., 100 Continue).
-
-- **2xx Success:** The action was successfully received, understood, and accepted.
-- **4xx Client Error:** Bad request example, 404 Not Found .
-- **5xx Server Error:** Server failure example, 500 Internal Server Error .
-### HTTP Request/Response Cycle
+## HTTP Request/Response Cycle
 
 **1. Client sends request:** Lines of the request, headers and optionally a body.
 **2. Server processes request:** Steps like the query of a database.
@@ -280,7 +279,7 @@ These are client manipulations on a server. Major methods include:
 - **POST**: Send data.
 - **PUT**: Modify data.
 - **DELETE**: Remove data.
-### HTTP Status Codes
+## HTTP Status Codes
 These are responses to a request:
 - **200 OK**: Success.
 - **201 Created**: New resource created.
@@ -318,20 +317,19 @@ These are responses to a request:
        path('hello/', hello_world),
    ]
 ```
-4. **Now run the development server**:
+4. Now run the development server:
 ```bash
 python manage.py runserver
 ```
-5. **Access the view in a browser**: Open a browser and type the URL `http://127.0.0.1:8000`. 
+5. Access the view in a browser: Open a browser and type the URL `http://127.0.0.1:8000`. 
 
 Below is the output.
+![Output - portno](https://github.com/anuja19103/Articles/assets/125860363/833b324e-56f8-4942-a9de-125f2030d0f0)
 
-![Output - portno](https://github.com/anuja19103/Articles/assets/125860363/e8ad7ec5-d715-4129-8767-23ace5ec19a8)
 
 # Templating and Rendering
 ## Templating Engines
 **What are Templating Engines?**
-
 - Templating engine should be able to process the template files within the application.
 - The engine replaces variables in a template file with actual values that are passed by the application through
 ```
@@ -341,18 +339,18 @@ def hello_name(request, name):
     return render(request, 'template.html', {'name': name})
 ```
 It will render `template.html` and replace `{{name}}` with the given `name`. It works as dynamic html output.
-### Advantages Of Templating Engines -
+## Advantages Of Templating Engines -
 1. **Separation of Concerns**: Allows us to separate the presentation from the business logic.
 2. **Code Reusability:** Reduces DRY violation and code duplication by providing reusability of HTML structure in multipe pages.
  3. **Dynamic Content:** It is easy to generate dynamic content in templates.
-It offers dynamic, maintainable web applications, hence enhancing web development. In this regard, templating engines similar to that of Django become significantly valuable in their field.
 # Working with Databases
-## Role
-Databases are at the heart of any web application, for they help to store and recover this data in a safe and effective way.
+## Role of Databases
+Databases are one of the fundamental building blocks peripheral to web development. They store, organize, and retrieve data in a safe and efficient fashion. Be it management of user accounts, transactions processing, or storing content data—databases make sure that your data is accessible and manageable. 
+
 ## Interacting with Databases
-Interactions with the database can be enabled through frameworks like Django using the Object-Relational Mapping approach that maps database tables to Python classes.
-## What's ORM?
-ORM advertises itself as a middleware application or tool between a web application and a database.
+Interacting with a database in web applications can be carried out by frameworks such as Django. Django operates through a compelling feature known as Object-Relational Mapping, conducting easier database operations. That is, the ORM will act as the bridge between a web application and a database. A developer is thus able to interact with the database using Python instead of writing complex SQL queries. This leads to the fastest development, readability, and maintainability of code.
+## Understanding ORM
+Object-Relational Mapping is a programming technique used for converting data between incompatible type systems in languages that use Object-oriented programming. It provides an interface that allows access between the web application and the database, thus being middleware, it enables manipulation of the database using high-level programming constructs.
 ## Example in Django
 In Django, models are used to represent database tables, where every attribute corresponds to a column in the table. For example:
 ```python
@@ -366,23 +364,24 @@ ORM gives a number of advantages including but not limited to: abstraction, port
 It implies that with ORM, they efficiently handle databases and focus on developing great user experience.
 # Deployment and Hosting
 ## The Process of Deployment
-The process of deploying a web application involves preparing your code, choosing a hosting service, and configuring the server.
+Basically, deploying a web application involves some critical steps for the smooth and effective running of your application within a production environment. It starts by preparing your code through testing, optimization, then finally packaging your application. You then need to decide on a hosting service that best suits your requirements.  Finally, set up a server for running your application.
 ## Web Hosting Services
-Heroku, AWS, and DigitalOcean are some great options; in fact, each of these services comes with their different features and plans.
+Among the plethora of choices, each web host service has its special features and plans. Heroku provides ease of use and simplicity from which beginners and small projects can add value to these qualities. AWS is destined to offer a wide variety of services and scalability options suitable for small and large-scale applications. 
 ## Choosing the Right Service for Hosting
-Consider scalability, reliability, performance, security, and cost in your choice of a hosting service.
-# Further Learning
-
-On areas such as RESTful APIs, Authentication, Web Security, and Frontend Frameworks. Practical building projects applications.
-
+Choosing the correct form of hosting service for your web application is an administrative decision that impacts the performance and users' experience with your application. In choosing a hosting service, there are various factors to be put into consideration, including: 
+- **Scalability**
+- **Reliability**
+- **Performance**
+- **Security**
+- **Cost**
 # Resources
 
--**[Django Official Documentation](https://docs.djangoproject.com/)**: The official Django documentation is the best place to start. It provides comprehensive guides, tutorials, and references for all Django functionalities.
--**[Simple is Better Than Complex](https://simpleisbetterthancomplex.com/)**: A blog with tutorials and articles on Django and Python web development.
--**[Django Stars Blog](https://djangostars.com/blog/)**: Articles and case studies related to Django development and best practices.
--**"Django for Beginners" by William S. Vincent**: This book is perfect for those who are new to Django and web development.
--**"Django Unleashed" by Andrew Pinkham**: A more in-depth book that covers advanced topics and best practices.
--**"Two Scoops of Django" by Audrey Roy Greenfeld and Daniel Roy Greenfeld**: This book offers best practices and tips from Django experts.
+- **[Django Official Documentation](https://docs.djangoproject.com/)**: The official Django documentation is the best place to start. It provides comprehensive guides, tutorials, and references for all Django functionalities.
+- **[Simple is Better Than Complex](https://simpleisbetterthancomplex.com/)**: A blog with tutorials and articles on Django and Python web development.
+- **[Django Stars Blog](https://djangostars.com/blog/)**: Articles and case studies related to Django development and best practices.
+- **"Django for Beginners" by William S. Vincent**: This book is perfect for those who are new to Django and web development.
+- **"Django Unleashed" by Andrew Pinkham**: A more in-depth book that covers advanced topics and best practices.
+- **"Two Scoops of Django" by Audrey Roy Greenfeld and Daniel Roy Greenfeld**: This book offers best practices and tips from Django experts.
 
 # Conclusion
 
