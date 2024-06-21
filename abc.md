@@ -51,7 +51,7 @@ Backend development concerns the server side of a web application. It deals with
 - **Frameworks:** Django, Flask, Express.js
 - **Roles and Responsibilities:** Handling data storage/retrieval, user authentication, business logic, and server configuration.
 ## Full-Stack Development
-Full-stack development involves the combination of frontend and backend development; a developer has the skills to handle the architecture of a web application at all levels. Thus, full-stack developers can handle everything from designing user interfaces to constructing server-side logic and databases.
+Full-stack development involves the **combination of frontend and backend development**; a developer has the skills to handle the architecture of a web application at all levels. Thus, full-stack developers can handle everything from designing user interfaces to constructing server-side logic and databases.
 ![1](https://github.com/anuja19103/Articles/assets/125860363/2e15dbae-8a8d-4474-b205-767fade2e1e1)
 # Introduction of Python for Web Development
 ## Reasons to Use Python
@@ -68,6 +68,7 @@ Python is well-suited for web development because of its:
 # Setting Up Your Development Environment
 ## Installing Python and a Web Framework
 You start web development with Python by installing the Python programming language, choosing a web framework that you prefer, and setting up a virtual environment.
+[click here](https://wiki.python.org/moin/WebFrameworks) to know differnt web frameworks.
 ## Step 1: Install Python
 **Download Python:**
  Go to [python.org](https://www.python.org/).
